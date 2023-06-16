@@ -1,0 +1,15 @@
+// form label:not(:last-of-type) {
+//     margin-bottom: 14px;
+// }
+
+// .input{
+// position: relative;
+// display: block;
+// }
+
+.error {
+  position: absolute;
+  margin: 0;
+  color: red;
+  font-size: 12px;
+}

@@ -32,6 +32,15 @@
   width: 424px;
 }
 
+.form label {
+  position: relative;
+  display: block;
+
+  &:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
+}
+
 .form input {
   box-sizing: border-box;
   background: #1f1f1f;
@@ -54,14 +63,11 @@
     color: #fff;
   }
 
-  &:focus{
-  opacity: 1;
-  }
-
-  &:not(:last-of-type) {
-    margin-bottom: 14px;
+  &:focus {
+    opacity: 1;
   }
 }
+
 
 .active {
   color: #fff;

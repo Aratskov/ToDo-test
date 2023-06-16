@@ -15,7 +15,7 @@ const AuthPage = () => {
         <li ><NavLink to="/auth/register" className={({isActive})=>clsx(s.link,isActive && s.active)}>Registration</NavLink></li>
         <li ><NavLink to="/auth/login" className={({isActive})=>clsx(s.link,isActive && s.active)} >Log In</NavLink></li>
       </ul>
-      <form className={s.form}>{id === 'login' ? <Login /> : <Register />}</form>
+      <div className={s.form}>{id === 'login' ? <Login /> : <Register />}</div>
       </div>
     </BackdropHome>
   );
