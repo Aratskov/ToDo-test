@@ -9,7 +9,8 @@ const validationSchema = yup.object().shape({
       .matches(
       /^[\w.%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
       'Invalid email address. Example: a@a.ua'
-    ),
+  )
+  .required('Email required'),
    password: yup
       .string()
       .matches(/^\S*$/, 'Must not contain spaces')
